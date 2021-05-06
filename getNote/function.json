@@ -8,8 +8,7 @@
       "name": "req",
       "methods": [
         "get"
-      ],
-      "connection": "mongodb-connstring" 
+      ]
     },
     {
       "type": "http",
