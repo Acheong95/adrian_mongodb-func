@@ -6,10 +6,8 @@
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "methods": [
-        "get"
-      ],
-      "connection": "mongodb-connstring" 
+      "connectionStringSetting" : "BqH0S4T7MQAX5UimJMaxGMPYKGh7Co0qdRMB26mIl3RCc8yXyjEbcw==",
+      "methods": ["post"]
     },
     {
       "type": "http",

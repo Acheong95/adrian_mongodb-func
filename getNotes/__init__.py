@@ -9,7 +9,7 @@ import azure.functions as func
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python getposts trigger function.')
     try:
-        url = os.getenviron['mongodb-connstring']
+        url = os.environ['mongodb-connstring']
         client = pymongo.MongoClient(url)
         database = client['lab2db']
         collection = database['notes']
@@ -17,6 +17,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         result = collection.find({})
         result = dumps(result)
 
-        return func.HttpResponse(result, mimetype="application/json", charset="utf8", status_code=200)
+        return func.HttpResponse(result, mimetype="application/json", charset='utf8', status_code=200)
     except:
         return func.HttpResponse("bad request", status_code=400)
