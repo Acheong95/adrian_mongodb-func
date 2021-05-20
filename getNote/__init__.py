@@ -14,7 +14,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse("This HTTP triggered function executed successfully. Pass an id in the query string or in the request body for a proper response.", status_code=400)
     else:
         try:
-            url = os.environ['mongodb-connstring']
+            url = os.environ['mongodb_connstring']
             client = pymongo.MongoClient(url)
             database = client['lab2db']
             collection = database['notes']

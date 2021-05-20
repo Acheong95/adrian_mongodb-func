@@ -2,11 +2,10 @@
   "scriptFile": "__init__.py",
   "bindings": [
     {
-      "authLevel": "function",
+      "authLevel": "admin",
       "type": "httpTrigger",
       "direction": "in",
       "name": "req",
-      "connectionStringSetting" : "BqH0S4T7MQAX5UimJMaxGMPYKGh7Co0qdRMB26mIl3RCc8yXyjEbcw==",
       "methods": ["post"]
     },
     {

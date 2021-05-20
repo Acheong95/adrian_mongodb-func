@@ -11,7 +11,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     request = req.get_json()
     if request:
         try:
-            url = os.environ['mongodb-connstring']
+            url = os.environ['mongodb_connstring']
             client = pymongo.MongoClient(url)
 
             database = client['lab2db']

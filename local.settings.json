@@ -1,12 +1,13 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "",
+    "AzureWebJobsStorage": "default",
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "mongodb-connstring": "mongodb://udacity-microservices-cosmosdb:y83nXL2wbTGg2ENNDkajegK1ZhDlIP7XNKnDnFIwnXSdvyyO80SZCAjgqCU8n5IHYxrgOiUZJdYaAtrnSONaPg==@udacity-microservices-cosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@udacity-microservices-cosmosdb@",
+    "mongodb_connstring": "mongodb://udacity-microservices-cosmosdb:y83nXL2wbTGg2ENNDkajegK1ZhDlIP7XNKnDnFIwnXSdvyyO80SZCAjgqCU8n5IHYxrgOiUZJdYaAtrnSONaPg==@udacity-microservices-cosmosdb.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@udacity-microservices-cosmosdb@",
     "FUNCTIONS_EXTENSION_VERSION": "~3",
     "WEBSITE_NODE_DEFAULT_VERSION": "~12",
-    "AzureWebJobsSecretStorageType": "files"
+    "AzureWebJobsSecretStorageType": "files",
+    "SendGridAPI" : "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"
     
   }
 }

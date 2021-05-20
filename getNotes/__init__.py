@@ -9,7 +9,7 @@ import azure.functions as func
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python getposts trigger function.')
     try:
-        url = os.environ['mongodb-connstring']
+        url = os.environ['mongodb_connstring']
         client = pymongo.MongoClient(url)
         database = client['lab2db']
         collection = database['notes']
